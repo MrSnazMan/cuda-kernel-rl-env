@@ -16,7 +16,7 @@ Requires the `prime` CLI and a Prime Intellect account. See [Prime Intellect's L
 
 ## Related work
 
-See [qwen-mtp-rollout-speed](https://github.com/MrSnazMan/qwen-mtp-rollout-speed) for a related experiment measuring speculative-decoding (MTP) effects on RL rollout speed, done as part of the same broader RL training learning project.
+See [speculative-decoding-rl-rollouts](https://github.com/MrSnazMan/speculative-decoding-rl-rollouts) for a related experiment measuring speculative-decoding (MTP) effects on RL rollout speed, done as part of the same broader RL training learning project.
 
 ## Acknowledgments
 
