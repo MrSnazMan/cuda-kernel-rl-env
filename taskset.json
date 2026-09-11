@@ -1,0 +1,292 @@
+{
+  "tasks": [
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 0,
+      "reference_speedup": 4.25
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 1,
+      "reference_speedup": 4.68
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 2,
+      "reference_speedup": 4.67
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 3,
+      "reference_speedup": 3.12
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 4,
+      "reference_speedup": 4.24
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 5,
+      "reference_speedup": 4.74
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 6,
+      "reference_speedup": 4.68
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "easy",
+      "seed": 7,
+      "reference_speedup": 3.4
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 0,
+      "reference_speedup": 2.2
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 1,
+      "reference_speedup": 5.03
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 2,
+      "reference_speedup": 3.38
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 3,
+      "reference_speedup": 4.43
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 4,
+      "reference_speedup": 4.28
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 5,
+      "reference_speedup": 2.19
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 6,
+      "reference_speedup": 2.56
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "medium",
+      "seed": 7,
+      "reference_speedup": 2.56
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 0,
+      "reference_speedup": 5.2
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 1,
+      "reference_speedup": 2.59
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 2,
+      "reference_speedup": 2.77
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 3,
+      "reference_speedup": 2.61
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 4,
+      "reference_speedup": 2.92
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 5,
+      "reference_speedup": 2.64
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 6,
+      "reference_speedup": 4.15
+    },
+    {
+      "category": "elementwise",
+      "difficulty": "hard",
+      "seed": 7,
+      "reference_speedup": 2.9
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 0,
+      "reference_speedup": 10.14
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 1,
+      "reference_speedup": 15.39
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 2,
+      "reference_speedup": 17.24
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 3,
+      "reference_speedup": 10.36
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 4,
+      "reference_speedup": 9.84
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 5,
+      "reference_speedup": 11.34
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 6,
+      "reference_speedup": 14.86
+    },
+    {
+      "category": "reduction",
+      "difficulty": "easy",
+      "seed": 7,
+      "reference_speedup": 11.39
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 0,
+      "reference_speedup": 10.09
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 1,
+      "reference_speedup": 9.0
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 2,
+      "reference_speedup": 10.56
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 3,
+      "reference_speedup": 11.39
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 4,
+      "reference_speedup": 11.4
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 5,
+      "reference_speedup": 9.02
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 6,
+      "reference_speedup": 8.86
+    },
+    {
+      "category": "reduction",
+      "difficulty": "medium",
+      "seed": 7,
+      "reference_speedup": 12.32
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 0,
+      "reference_speedup": 10.22
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 1,
+      "reference_speedup": 10.0
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 2,
+      "reference_speedup": 10.11
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 3,
+      "reference_speedup": 9.98
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 4,
+      "reference_speedup": 11.27
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 5,
+      "reference_speedup": 10.21
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 6,
+      "reference_speedup": 9.68
+    },
+    {
+      "category": "reduction",
+      "difficulty": "hard",
+      "seed": 7,
+      "reference_speedup": 10.68
+    }
+  ]
+}

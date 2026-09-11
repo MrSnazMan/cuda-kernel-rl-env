@@ -1,0 +1,31 @@
+# machine-specific benchmark cache (regenerate with scripts/generate_tasks.py)
+scripts/_task_cache.json
+
+# eval artifacts
+outputs/
+
+# build / packaging output
+dist/
+build/
+*.egg-info/
+
+# a stray `uv run`/`uv build` invoked from this directory treats the env as its
+# own project and drops these here; they break `prime env install`'s local-env
+# resolution, so never commit them
+.venv/
+uv.lock
+
+# caches
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# secrets
+.env
+*.env
+secrets.env

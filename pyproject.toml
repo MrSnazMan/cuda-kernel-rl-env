@@ -1,0 +1,50 @@
+[project]
+name = "cuda-kernel-opt"
+description = "Iterative CUDA kernel optimisation: rewrite a seeded-inefficient kernel to be faster while staying numerically correct against a reference, scored on measured speedup with a hard correctness gate."
+tags = ["multi-turn", "tool-use", "code", "cuda", "gpu", "optimization", "train", "eval"]
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "verifiers[all]>=0.1.14",
+    "numpy>=1.24",
+    "rich>=13.0",
+    "cupy-cuda12x>=13.0",
+    "nvidia-cuda-nvrtc-cu12>=12.4,<13",
+    "nvidia-cuda-runtime-cu12>=12.4,<13",
+    # verifiers' ZMQ env server drives zmq.asyncio; on Windows that needs
+    # tornado>=6.1 for add_reader support on the default Proactor event loop
+    # (a SelectorEventLoop can't spawn the GPU worker subprocess this env uses).
+    'tornado>=6.1 ; sys_platform == "win32"',
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "cuda_kernel_opt/**/*.py",
+    "scripts/**/*.py",
+    "_win_compat/_vf_win_compat.py",
+    "_win_compat/_vf_win_compat.pth",
+    "pyproject.toml",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["cuda_kernel_opt"]
+
+# Ship a startup shim (see _win_compat/_vf_win_compat.py) that makes the
+# verifiers/prime toolchain work on Windows. The .pth is executed by `site` at
+# interpreter start-up; the module is a no-op off Windows. Both land at the root
+# of site-packages. `scripts/windows_setup.py` installs the same pair by hand
+# for install layouts that drop force-included data (and is safe to re-run).
+[tool.hatch.build.targets.wheel.force-include]
+"_win_compat/_vf_win_compat.py" = "_vf_win_compat.py"
+"_win_compat/_vf_win_compat.pth" = "_vf_win_compat.pth"
+
+[tool.verifiers.eval]
+num_examples = 6
+rollouts_per_example = 2
+
+[tool.pytest.ini_options]
+markers = ["gpu: requires a working CuPy + CUDA 12 runtime on an NVIDIA GPU"]
